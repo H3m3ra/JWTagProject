@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35431.28
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JWTagProjectCA", "JWTagProjectCA\JWTagProjectCA.csproj", "{CC80625C-C32A-44B0-9796-25D608132054}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JWTagLibrary", "JWTagLibrary\JWTagLibrary.csproj", "{712039CF-7574-45F4-9DC6-6FBE060F527D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC80625C-C32A-44B0-9796-25D608132054}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC80625C-C32A-44B0-9796-25D608132054}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC80625C-C32A-44B0-9796-25D608132054}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC80625C-C32A-44B0-9796-25D608132054}.Release|Any CPU.Build.0 = Release|Any CPU
+		{712039CF-7574-45F4-9DC6-6FBE060F527D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{712039CF-7574-45F4-9DC6-6FBE060F527D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{712039CF-7574-45F4-9DC6-6FBE060F527D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{712039CF-7574-45F4-9DC6-6FBE060F527D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D0D4B35-D451-489E-817F-6D00447A0522}
+	EndGlobalSection
+EndGlobal
