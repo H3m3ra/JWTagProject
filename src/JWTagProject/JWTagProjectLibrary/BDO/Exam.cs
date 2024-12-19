@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace JWTagProjectLibrary.BDO;
 
@@ -22,5 +23,6 @@ public class Exam
     [Required]
     public Faculty Faculty { get; set; }
 
+    [ForeignKey(nameof(Exercise.Id))]
     public ICollection<Exercise> NavExercises { get; set; }
 }

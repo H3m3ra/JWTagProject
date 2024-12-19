@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Drawing;
 
 namespace JWTagProjectLibrary.BDO;
@@ -13,6 +14,7 @@ public class Tag
 
     [Required]
     public Color Color { get; set; }
-   
+
+    [ForeignKey(nameof(Exercise.Id))]
     public ICollection<Exercise> NavExcersises { get; set; }
 }
