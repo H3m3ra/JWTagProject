@@ -1,0 +1,51 @@
+@startuml
+hide circle
+skinparam roundcorner 20
+
+class Exam{
++Id: Guid
++Year: int
++Quarter: int
++Description: string
++Type: ExamType
++Faculty: Faculty
++Exams: Exam[]
+
++NavExercises: Exercise[]
+}
+class Faculty{
++Id: Guid
++Name: string
++Description: string
+
++NavExams: Exam[]
+}
+class Exercise{
++Id: int
++Number: int
++Name: string
++Description: string
++Labels: Label[]
+}
+class Label{
++Id: int
++Name: string
++Description: string
++Color: Color
+
++NavExercises: Exercise[]
+}
+class ExamType{
++Id: int
++Name: string
++Description: string
+
++NavExam: Exam
+}
+
+Exam -->"1" ExamType
+Exam -->"1" Faculty
+Exercise -->"1" Exam
+Exercise o-"0..*" Label
+
+@enduml
