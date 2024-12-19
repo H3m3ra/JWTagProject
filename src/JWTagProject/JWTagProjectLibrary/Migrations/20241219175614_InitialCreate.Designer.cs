@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace JWTagProjectLibrary.Migrations
 {
     [DbContext(typeof(JWTagProjectDbContext))]
-    [Migration("20241219174444_InitialCreate")]
+    [Migration("20241219175614_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -113,6 +113,10 @@ namespace JWTagProjectLibrary.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("TEXT");
 

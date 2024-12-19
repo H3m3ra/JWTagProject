@@ -17,6 +17,11 @@ public class JWTagProjectDbContext : DbContext
 
     }
 
+    public JWTagProjectDbContext(DbContextOptions<JWTagProjectDbContext> options) : base(options)
+    {
+    
+    }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         if (!optionsBuilder.IsConfigured)
