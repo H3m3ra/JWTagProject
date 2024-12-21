@@ -30,7 +30,7 @@ public class JWTagProjectDbContext : DbContext
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json")
                 .Build();
-            var connectionString = configuration.GetConnectionString("DbCoreConnectionString");
+            var connectionString = configuration.GetConnectionString("ConnectionString");
             optionsBuilder.UseSqlite(connectionString);
         }
     }
